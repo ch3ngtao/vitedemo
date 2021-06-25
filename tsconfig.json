@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // 编译输出es版本
+    "module": "esnext", // 采用的模块系统
+    "moduleResolution": "node", // 如何处理模块
+    "strict": true, // 以严格模式解析
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+}
