@@ -12,5 +12,8 @@ export default defineConfig({
   base: '/vitedemo/',
   build: {
     outDir: 'vitedemo'
+  },
+  server: {
+    host: '0.0.0.0'
   }
 })

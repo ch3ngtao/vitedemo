@@ -1,37 +1,11 @@
 <template>
-  <h1>{{ msg }}</h1>
-
-  <p>
-    Recommended IDE setup:
-    <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
-    +
-    <a
-      href="https://marketplace.visualstudio.com/items?itemName=octref.vetur"
-      target="_blank"
-    >
-      Vetur
-    </a>
-    or
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
-    (if using
-    <code>&lt;script setup&gt;</code>)
-  </p>
-
-  <p>See <code>README.md</code> for more information.</p>
-
-  <p>
-    <a href="https://vitejs.dev/guide/features.html" target="_blank">
-      Vite Docs
-    </a>
-    |
-    <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
-  </p>
-
-  <button type="button" @click="count++">count is: {{ count }}</button>
-  <p>
-    Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
-  </p>
+  <div class="title">{{input}}小仙女</div>
+  <p style="color: #eb1818">请你</p>
+  <img src="../assets/fn.jpg" alt="">
+  <p style="color: pink;">怎么能没人送花呢</p>
+  <img src="../assets/h.jpg" alt="">
+  <p style="color: red; font-size: 0.52rem;">做个仙女，不要生气啦</p>
+  <img src="../assets/xn.jpg" alt="">
 </template>
 
 <script lang="ts">
@@ -39,7 +13,7 @@ import { ref, defineComponent } from 'vue'
 export default defineComponent({
   name: 'HelloWorld',
   props: {
-    msg: {
+    input: {
       type: String,
       required: true
     }
@@ -52,19 +26,16 @@ export default defineComponent({
 </script>
 
 <style scoped>
-a {
-  color: #42b983;
+.title {
+  height: 1rem;
+  font-size: 0.42rem;
+  width: 100%;
 }
-
-label {
-  margin: 0 0.5em;
-  font-weight: bold;
+img {
+  width: 100%;
+  height: auto;
 }
-
-code {
-  background-color: #eee;
-  padding: 2px 4px;
-  border-radius: 4px;
-  color: #304455;
+p {
+  font-size: 0.48rem;
 }
 </style>
